@@ -1,5 +1,5 @@
 import React from "react";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from "./react-beautiful-dnd";
 
 // fake data generator
 const getItems = (count) =>
@@ -42,7 +42,7 @@ class Dnd extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: getItems(10),
+            items: getItems(20),
         };
         this.onDragEnd = this.onDragEnd.bind(this);
     }
@@ -81,6 +81,7 @@ class Dnd extends React.Component {
                                     key={item.id}
                                     draggableId={item.id}
                                     index={index}
+                                    timeForLongPress={0}
                                 >
                                     {(provided, snapshot) => (
                                         <div
@@ -95,7 +96,13 @@ class Dnd extends React.Component {
                                             <div
                                                 className="handle"
                                                 {...provided.dragHandleProps}
-                                            />
+                                            >
+                                                <svg viewBox="0 0 1024 1024">
+                                                    <g>
+                                                        <path d="M1024 512l-256-192v128h-192v-192h128l-192-256-192 256h128v192h-192v-128l-256 192 256 192v-128h192v192h-128l192 256 192-256h-128v-192h192v128z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
                                             {item.content}
                                         </div>
                                     )}

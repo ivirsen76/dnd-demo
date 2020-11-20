@@ -1,5 +1,5 @@
 import React from "react";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from "./react-beautiful-dnd";
 
 // fake data generator
 const getItems = (count) =>
@@ -42,7 +42,7 @@ class Dnd extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: getItems(10),
+            items: getItems(20),
         };
         this.onDragEnd = this.onDragEnd.bind(this);
     }

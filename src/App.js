@@ -4,14 +4,14 @@ import './index.css';
 
 function App() {
     return (
-        <div style={{ display: "flex", width: '100%' }}>
-            <div style={{ flexGrow: 1, flexBasis: 0, padding: '1em'}} >
-                <p>With touch</p>
-                <DndWithTouch />
+        <div className="wrapper">
+            <div>
+                <div className="description">With touch</div>
+                <div className="list"><DndWithTouch /></div>
             </div>
-            <div style={{ flexGrow: 1, flexBasis: 0, padding: '1em'}} >
-                <p>With handle</p>
-                <DndWithHandle />
+            <div>
+                <div className="description">With handle</div>
+                <div className="list"><DndWithHandle /></div>
             </div>
         </div>
     );
