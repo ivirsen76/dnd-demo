@@ -27,7 +27,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 
     // change background colour if dragging
     background: isDragging ? "lightgreen" : "grey",
-    borderRadius: '5px',
+    borderRadius: "5px",
 
     // styles we need to apply on draggables
     ...draggableStyle,
@@ -86,14 +86,16 @@ class Dnd extends React.Component {
                                         <div
                                             ref={provided.innerRef}
                                             {...provided.draggableProps}
-
                                             style={getItemStyle(
                                                 snapshot.isDragging,
                                                 provided.draggableProps.style
                                             )}
                                             className="dragItem"
                                         >
-                                            <div className="handle" {...provided.dragHandleProps} />
+                                            <div
+                                                className="handle"
+                                                {...provided.dragHandleProps}
+                                            />
                                             {item.content}
                                         </div>
                                     )}
