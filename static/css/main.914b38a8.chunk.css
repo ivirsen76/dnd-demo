@@ -1,2 +1,0 @@
-*{box-sizing:border-box}body{padding:0;margin:0}.wrapper{display:flex}.wrapper>div{flex-grow:1;flex-basis:0}.description{height:50px;padding:1em}.list{height:calc(100vh - 50px - 2em);margin:1em;overflow:auto}.dragItem{position:relative;padding-left:3em!important}.handle{position:absolute;width:2em;height:2em;left:.5em;top:.5em;background:#333;border-radius:5px;display:flex;justify-content:center;align-items:center;color:#fff}.handle svg{fill:#fff;width:1.2em;height:1.2em}
-/*# sourceMappingURL=main.914b38a8.chunk.css.map */
