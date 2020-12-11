@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dnd-demo/static/css/main.41276578.chunk.css",
+    "main.css": "/dnd-demo/static/css/main.770ee8fd.chunk.css",
     "main.js": "/dnd-demo/static/js/main.6f19986e.chunk.js",
     "main.js.map": "/dnd-demo/static/js/main.6f19986e.chunk.js.map",
     "runtime-main.js": "/dnd-demo/static/js/runtime-main.ecab05db.js",
@@ -10,13 +10,13 @@
     "static/js/3.519a450a.chunk.js": "/dnd-demo/static/js/3.519a450a.chunk.js",
     "static/js/3.519a450a.chunk.js.map": "/dnd-demo/static/js/3.519a450a.chunk.js.map",
     "index.html": "/dnd-demo/index.html",
-    "static/css/main.41276578.chunk.css.map": "/dnd-demo/static/css/main.41276578.chunk.css.map",
+    "static/css/main.770ee8fd.chunk.css.map": "/dnd-demo/static/css/main.770ee8fd.chunk.css.map",
     "static/js/2.f01e2e23.chunk.js.LICENSE.txt": "/dnd-demo/static/js/2.f01e2e23.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ecab05db.js",
     "static/js/2.f01e2e23.chunk.js",
-    "static/css/main.41276578.chunk.css",
+    "static/css/main.770ee8fd.chunk.css",
     "static/js/main.6f19986e.chunk.js"
   ]
 }
