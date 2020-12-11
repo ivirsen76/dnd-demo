@@ -43,3 +43,7 @@ body {
     width: 1.2em;
     height: 1.2em;
 }
+.disable-select {
+    user-select: none;
+    -webkit-user-select: none;
+}

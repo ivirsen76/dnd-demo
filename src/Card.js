@@ -13,7 +13,6 @@ const style = {
     marginBottom: '.5rem',
     backgroundColor: 'white',
     cursor: 'move',
-    userSelect: 'none',
 };
 const Card = React.forwardRef(({ text, isDragging, connectDragSource, connectDropTarget }, ref) => {
     const elementRef = useRef(null);
@@ -25,7 +24,7 @@ const Card = React.forwardRef(({ text, isDragging, connectDragSource, connectDro
     }));
     return React.createElement(
         'div',
-        { ref: elementRef, style: Object.assign(Object.assign({}, style), { opacity }) },
+        { ref: elementRef, class: 'disable-select', style: Object.assign(Object.assign({}, style), { opacity }) },
         text
     );
 });
